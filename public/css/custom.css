@@ -1,0 +1,253 @@
+/* header  */
+.header .offers-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0 15px;
+}
+
+.header .text-container {
+    padding: 10px;
+    background-color: #e0e0e030;
+}
+
+.header .offers-container .offers-welcome {
+    background-color: white;
+  
+    /* Create the gradient. */
+     /* background-image: linear-gradient(
+        45deg,
+        #CA4246 16.666%,
+        #E16541 16.666%,
+        #E16541 33.333%,
+        #F18F43 33.333%,
+        #F18F43 50%,
+        #3f51b5 50%,
+        #2196f3 66.666%,
+        #96b941 66.666%,
+        #476098 83.333%,
+        #A7489B 83.333%
+        ); */
+
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+  
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    
+    /* Animate the text when loading the element. */
+    /* This animates it on page load and when hovering out. */
+      animation: rainbow-text-simple-animation-rev 1.75s ease forwards;
+}
+
+.header .offers-container .offers-welcome,
+.header .offers-container .offers-header {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.header .offers-container .offers-header {
+    color: whitesmoke;
+}
+
+.header .offers-container .offers-content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.header .offers-container .offers-content > p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    width: 80%;
+}
+
+.header .offers-container .offers-content p > span{
+    font-weight: bold;
+    color: #9cc0fb;
+}
+
+/* intro */
+.intro .image-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.intro .image-container .vision-photo {
+    max-height: 410px;
+    border: solid 1px #d3d2d2;
+}
+
+/* our-team */
+.our-team .cards {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.our-team .cards .card {
+    width: 250px;
+    max-width: 300px;
+    margin-right: auto;
+    margin-bottom: 4rem;
+    margin-left: auto;
+    border: none;
+    background-color: transparent;
+}
+
+.our-team .cards .card .card-image,
+.our-team .cards .card .card-image img {
+    border-radius: 200px;
+    border: 1px solid #e0e0e0;
+}
+
+.our-team .cards .card .card-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.our-team .cards .card .card-body .social-icons {
+ display: block;
+}
+
+.our-team .cards .card .card-body > p {
+    display: -webkit-box;
+    line-height: 25px;
+    position: relative;
+    overflow: hidden;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+.our-team .cards .card .card-body > p > span {
+    display: block;
+    clear: both;
+    color: #257e08;
+}
+
+.our-team .cards .card .card-body > p:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+    height: 25px; 
+}
+
+.our-team .cards .card .card-body a {
+    order: 2;
+}
+
+.our-team .cards .card .card-body a.show-less {
+    display: none;
+}
+
+.our-team .cards .card .card-body a.show-less:target {
+    display: block;
+}
+
+.our-team .cards .card .card-body a.show-less:target ~ p {
+    display: block;
+    max-height: 100%;
+}
+
+.our-team .cards .card .card-body a.show-less:target + a {
+    display: none;
+}
+
+/* our-services */
+.our-services .card .card-body .card-title {
+    min-height: 45px;
+}
+
+.our-services .card .card-image img {
+    width: 320px;
+    height: 250px;
+    border: solid 1px #d3d2d2;
+}
+
+/* academy information */
+.academy-information .academy-info-image {
+    margin-top: 2.5rem;
+    margin-right: 1.75rem;
+}
+
+.academy-information .academy-info-image img {
+    width: 90%;
+    margin: 0;
+    border-radius: 2px;
+    transition: all 0.3s;
+    border: 1px solid #e0e0e0;
+}
+
+.academy-information .academy-info-image img:hover {
+    -moz-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+}
+
+/* why us */
+.why-us .why-us-image {
+        height: 440px;
+        background: url(../images/why-us.jpg) center center no-repeat;
+        background-size: cover;
+        width: 49%;
+        height: 100%;
+        display: inline-block;
+}
+
+/* sponsors */
+.sponsors .sponsors-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition-duration: 300ms; transform: translate3d(-3426px, 0px, 0px);
+}
+
+.sponsors .slide-container .swiper-slide {
+    width: 310.667px;
+    margin-right: 70px;
+}
+
+.sponsors .card .card-image {
+    border-radius: 0;
+    width: 70%;
+    height: 25%;
+}
+
+/* footer */
+.footer .footer-contacts {
+    width: 245px !important;
+    text-align: left !important;
+}
+
+/* temp */
+.hidden {
+    display: none;
+}
+
+.fb-page.fb_iframe_widget > span,
+.fb-page.fb_iframe_widget > span > iframe,
+.fb-page.fb_iframe_widget > span > iframe body.plugin div._2p3a,
+.fb-page.fb_iframe_widget > span > iframe body.chrome,
+.fb-page.fb_iframe_widget > span > iframe body.webkit {
+    width: 100% !important;
+}
+
+._2p3a {
+    width: 100% !important;
+}
+
+#appView .powrMark {
+    display: none;
+}
